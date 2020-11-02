@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 
 # binder dep
-RUN pip install --no-cache-dir notebook==5.*
+RUN pip install --no-cache-dir notebook==5.* jupyterhub
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
