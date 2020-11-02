@@ -1,7 +1,7 @@
-FROM python:3.8-slim-buster
+FROM jupyterhub/singleuser:1.2.1
 
 # binder dep
-RUN pip install --no-cache-dir notebook==5.* jupyterhub
+# RUN pip install --no-cache-dir notebook==5.* jupyterhub
 
 ARG NB_USER=jovyan
 ARG NB_UID=1000
