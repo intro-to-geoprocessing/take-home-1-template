@@ -28,3 +28,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . ${HOME}
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_USER}
+USER root
